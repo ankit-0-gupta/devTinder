@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/user/:userId/:age", (req, res)=>{
+app.get("/user/:userId/:userName/:userAge", (req, res)=>{
     console.log(req.params.userId);
     res.send({userName: 'Ankit Gupta', age: 21});
 });
